@@ -1,0 +1,139 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5; /* Cor de fundo suave */
+  color: #333; /* Cor de texto escura */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+  padding: 20px; /* Adiciona espaçamento nas bordas */
+  margin-top: 50px; /* Espaço para o menu fixo */
+}
+
+h1, h2, h3 {
+  color: #2c3e50; /* Cor para os títulos */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Barra de navegação */
+nav {
+  background-color: #34495e; /* Cor de fundo escura */
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav a {
+  color: #ecf0f1; /* Cor dos links */
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #3498db; /* Cor de hover para links */
+}
+
+/* Layout de perguntas */
+.question {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  font-size: 1.75rem;
+}
+
+.question p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.question .votes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Botões de voto */
+button {
+  background-color: #3498db; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  cursor: pointer; /* Aponta para o cursor de clique */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2980b9; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+/* Formulário de comentários */
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  font-size: 1rem;
+  resize: vertical; /* Permite redimensionar o textarea */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db; /* Bordas coloridas ao focar no campo */
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Font-size reduzido em dispositivos móveis */
+  }
+
+  button {
+    width: 100%; /* Botões mais largos em telas pequenas */
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+}
+
+/* Definindo a fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');

@@ -1,0 +1,17 @@
+.question {
+  margin: 20px;
+}
+
+.vote button {
+  margin: 5px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
