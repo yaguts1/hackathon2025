@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #f9f9fb;
+  --text-color: #2c3e50;
+  --card-bg: #fff;
+  --primary: #3498db;
+  --primary-hover: #2980b9;
+  --border-color: #ddd;
+  --placeholder-color: #95a5a6;
+}
+
+body.dark {
+  --bg-color: #1e1e2f;
+  --text-color: #ecf0f1;
+  --card-bg: #2c3e50;
+  --primary: #9b59b6;
+  --primary-hover: #8e44ad;
+  --border-color: #555;
+  --placeholder-color: #bdc3c7;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 GLOBAL PLACEHOLDER STYLE */
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1; /* ou 0.6 se quiser mais discreto */
+}
+
+/* Remove default focus ring */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(100, 100, 100, 0.6);
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border: 1px solid #555;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}

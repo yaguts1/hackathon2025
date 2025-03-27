@@ -1,0 +1,36 @@
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+    margin: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .body {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .toggleButton {
+    padding: 8px 16px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .toggleButton:hover {
+    background-color: var(--primary-hover);
+  }
+  

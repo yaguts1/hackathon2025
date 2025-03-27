@@ -1,0 +1,204 @@
+.fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .fab:hover {
+    transform: scale(1.1);
+  }
+  
+  .chatbot {
+    position: fixed;
+    bottom: 90px;
+    right: 24px;
+    width: 350px;
+    max-height: 500px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 998;
+  }
+  
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* padrão no modo normal */
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    min-height: 48px;
+  }
+  
+  .expanded .header {
+    justify-content: center; /* centraliza no modo expandido */
+    font-size: 1.4rem;
+  }
+  
+  
+  
+  .chatBox {
+    padding: 12px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--bg-color);
+  }
+  
+  .message {
+    margin-bottom: 8px;
+    padding: 10px 14px;
+    border-radius: 16px;
+    max-width: 80%;
+    font-size: 0.95rem;
+  }
+  
+  .user {
+    background-color: var(--primary);
+    color: white;
+    margin-left: auto;
+  }
+  
+  .bot {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    margin-right: auto;
+  }
+  
+  .inputArea {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .inputArea input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .inputArea button {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none;
+    border-radius: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .expandBtn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease;
+    z-index: 1001;
+  }
+  
+  
+  
+  .expandBtn:hover {
+    transform: scale(1.25);
+  }
+  .expanded .message {
+    position: relative;
+    padding: 10px 14px;
+    margin: 12px 0;
+    max-width: 75%;
+    border-radius: 16px;
+    font-size: 0.95rem;
+  }
+  
+  .expanded .user {
+    background-color: var(--primary);
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+  }
+  
+  .expanded .user::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid var(--primary);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  
+  .expanded .bot {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+  }
+  
+  .expanded .bot::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-right: 8px solid #ecf0f1;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  .chatBox {
+    padding: 16px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+  }
+  

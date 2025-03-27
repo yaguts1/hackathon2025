@@ -1,0 +1,75 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "title": "Como simular faltas trifásicas no ETAP?",
+      "body": "Quero realizar uma simulação de curto-circuito em um sistema de 138kV.",
+      "upvotes": 10,
+      "downvotes": 2,
+      "answers": [
+        {
+          "id": 101,
+          "text": "Use a ferramenta Fault Analysis e configure a impedância das barras.",
+          "upvotes": 24,
+          "downvotes": 6,
+          "replies": [
+            {
+              "id": 1001,
+              "text": "Boa! Só lembrar de ajustar a norma IEEE 551.",
+              "upvotes": 24,
+              "downvotes": 4,
+              "replies": [
+                {
+                  "id": 1743033096828,
+                  "text": "Respondendo aqui suas pergutnas!\n",
+                  "replies": [],
+                  "upvotes": 17,
+                  "downvotes": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1743042606169,
+          "text": "fadsfadsfasdfaasdfadsfsdfasasdfadsfdf",
+          "upvotes": 0,
+          "downvotes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "da53",
+      "title": "Nova pergunta para teste",
+      "body": "Essa é a nova pergunta para teste",
+      "upvotes": 0,
+      "downvotes": 0,
+      "answers": [
+        {
+          "id": 1743033124984,
+          "text": "Otima pergunta",
+          "upvotes": 3,
+          "downvotes": 0,
+          "replies": [
+            {
+              "id": 1743033129838,
+              "text": "babab",
+              "replies": [
+                {
+                  "id": 1743033133709,
+                  "text": "fadsfadsfasd",
+                  "replies": [],
+                  "upvotes": 0,
+                  "downvotes": 0
+                }
+              ],
+              "upvotes": 4,
+              "downvotes": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
